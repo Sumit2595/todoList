@@ -64,6 +64,7 @@ function App() {
                 <>
                   <AddTodo addTodo={addTodo} />
                   <Todos todos={todos} onDelete={onDelete} />
+                  <Footer />
                 </>
               );
             }}
@@ -71,8 +72,8 @@ function App() {
           <Route exact path="/about">
             <About />
           </Route>
+          <Footer />
         </Switch>
-        <Footer />
       </Router>
     </>
   );
